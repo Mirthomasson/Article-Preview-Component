@@ -1,0 +1,229 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8em 1.5em;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.top {
+    height: auto;
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+h1 {
+    font-size: 17px;
+    margin-top: 2em;
+    padding: .5em 2em;
+    color: hsl(217, 19%, 35%);
+}
+
+.description {
+    padding: .5em 2em;
+    color: hsl(212, 23%, 69%);
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#profile-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1em;
+}
+
+.profile-photo {
+    height: 3em;
+    width: auto;
+    border-radius: 50%;
+}
+
+.profile {
+    margin: 1em;
+    margin-right: 5em;
+}
+
+.name {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.date {
+    color: hsl(212, 23%, 69%);
+    margin-top: -.8em;
+}
+
+button {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+    transition: ease .5s;
+}
+
+button:hover {
+    background-color: hsl(212, 23%, 69%);
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+button:hover path{
+    fill: white;
+    transition: ease .5s;
+}
+
+.share-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 5.4em;
+    margin-bottom: -5.4em;
+    transition: ease .5s;
+    display: none;
+    background-color:  hsl(217, 19%, 35%);
+    width: 100%;
+    border-radius: 0 0 1em 1em;
+}
+
+.show {
+    display: flex;
+  }
+
+.share-text {
+    letter-spacing: .3em;
+    color: hsl(212, 23%, 69%);
+    margin: 2em 0 2em 2em;
+}
+
+.social-icon {
+    margin: .8em;
+}
+
+.social-icon path:hover {
+    fill: hsl(212, 23%, 69%);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+
+@media only screen and (min-width: 1440px) and (max-width: 4000px) { 
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 15em 10em;
+        height: 25em;
+        width: 70em;
+        margin: 12em auto;
+    }
+
+    .top {
+        border-radius: 1em 0 0 1em;
+        object-fit: cover;
+        object-position: left;
+        height: 25em;
+        width: 30em;
+    }
+
+    .top img {
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        position: relative;
+        top: -.5em;
+    }
+
+    .description {
+        color: hsl(212, 23%, 69%);
+        line-height: 1.5em;
+        font-size: 14px;
+        margin: 0 2em;
+        margin-top: -2em;
+        margin-bottom: .5em;
+    }
+
+    #text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #bottom {
+        position: relative;
+        top: -1em;
+        margin: 1em;
+    }
+
+    .profile {
+        margin-right: 18em;
+    }
+
+    .share-bar {
+        position: absolute;
+        width: 22em;
+        height: 5em;
+        border-radius: 1em;
+        top: 24.5em;
+        right: 13em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    .share-text {
+        font-size: 13px;
+        margin: 0 2em;
+        margin-left: 3em;
+    }
+
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid hsl(217, 19%, 35%);
+        position: relative;
+        bottom: -3em;
+        left: -10.5em;
+      }
+
+}
+
